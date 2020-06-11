@@ -1,0 +1,36 @@
+$main: #000;
+$white: #ffffff;
+$black: #000000;
+$gray: #838383;
+$gray1: #efefef;
+$gray2: #e5e5e5;
+$skyblue: #eaf8ff;
+
+$theme-color: #702e0f;
+$theme-color-sec: #f1e9e7;
+$theme-dark: darken($theme-color, 5%);
+$theme-color1: #702e0f;
+$theme-color2: #702e0f;
+
+/*******************************
+********responsive design*******/
+$min-mobilexx: "(min-width: 375px)";
+$max-mobilexx: "(max-width: 375px)";
+$min-mobilex: "(min-width: 480px)";
+$max-mobilex: "(max-width: 481px)";
+$min-mobile: "(min-width: 767px)";
+$max-mobile: "(max-width: 767px)";
+$max-medium: "(max-width: 992px)";
+$min-medium: "(min-width: 991px)";
+$min-large: "(min-width: 1200px)";
+$max-large: "(max-width: 1201px)";
+
+$facebook: #3b5998;
+$twitter: #1dcaff;
+$google: #dd4b39;
+
+// ********************************
+// directions
+// ********************************
+$direction: right;
+$direction-reverse: left;

@@ -1,0 +1,57 @@
+@import "_framework.scss";
+@import "_variables.scss";
+body {
+  color: $main;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  text-align: $direction;
+  overflow-x: hidden;
+  direction: rtl;
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+}
+.btn-primary {
+  background: transparent !important;
+  color: $main;
+  border-radius: 0 !important;
+  border: 2px solid $main;
+  padding: 17px 39px;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media #{$max-mobile} {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    @media #{$max-mobile} {
+      font-size: 2rem;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Tajawal";
+
+  src: url("../webfonts/Tajawal-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Tajawal";
+
+  src: url("../webfonts/Tajawal-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Tajawal";
+
+  src: url("../webfonts/Tajawal-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+}

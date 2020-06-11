@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/partials/branches.scss"
+    ],
+    "names": [],
+    "file": "branches.css"
+}

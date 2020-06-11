@@ -1,0 +1,109 @@
+.header {
+  position: relative;
+}
+.navbar-header {
+  background: transparent;
+  height: 65px;
+}
+.navbar-inverse {
+  background: transparent;
+  border: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 999;
+  border-radius: 0;
+  @include transition();
+  @media #{$max-medium} {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+  // .navbar-toggle {
+  //   float: #{$direction-reverse};
+  //   position: relative;
+  //   color: $white !important;
+  //   background: transparent;
+  //   border: 0;
+  //   margin-#{$direction-reverse}: 20px;
+  //   @include transition();
+  //   .icon-bar {
+  //     background-color: $black;
+  //   }
+  //   &:hover,
+  //   &:focus {
+  //     background-color: transparent;
+  //     .icon-bar {
+  //       background: $black;
+  //     }
+  //   }
+  // }
+
+  .navbar-toogle-icon {
+    i {
+      color: $black;
+    }
+  }
+  button,
+  a,
+  span {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar-collapse {
+    @media #{$max-medium} {
+      .navbar-nav {
+        background-color: $white;
+
+        border-color: transparent;
+        padding: 20px;
+        @include shadow(0px, 20px, 25px, -10px, rgba($black, 0.1));
+        .nav-link {
+          color: $main !important;
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      width: 200px;
+    }
+  }
+
+  .navbar-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media #{$max-mobile} {
+      position: relative;
+
+      .nav-link {
+        color: $main !important;
+        padding: 10px 0 !important;
+      }
+    }
+    .nav-link {
+      padding-right: 60px;
+      color: $white;
+      font-size: 1rem;
+      font-weight: bold;
+      @include transition();
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+      @media #{$max-medium} {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+.affix {
+  width: 100%;
+  background-color: $white;
+  a {
+    color: $main !important;
+  }
+  @include shadow(0px, 5px, 25px, -10px, rgba($black, 0.3));
+  padding-top: 10px;
+}

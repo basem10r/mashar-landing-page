@@ -1,0 +1,39 @@
+.btn {
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding: 17px 39px;
+  border-radius: 35px;
+  border-top-left-radius: 0px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.btn-primary {
+    background: $main;
+    color: $white;
+    border: 2px solid $main;
+    @include transition();
+    &:hover,
+    &:focus {
+      background: transparent;
+      color: $main;
+      border: 2px solid $main;
+    }
+  }
+  &.btn-danger {
+    background: $theme-color;
+    color: $white;
+    border: 2px solid $theme-color;
+    @include transition();
+    &:hover,
+    &:focus {
+      background: $theme-color;
+      color: $white !important;
+      border-color: $theme-color !important;
+    }
+  }
+}
